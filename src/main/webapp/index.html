@@ -1,0 +1,21 @@
+<html>
+<title>Codenvy ,googleappengine,Demo</title>
+	<body>
+<input type="number"  id="num1" required autofocus>
+<input type="number"  id="num2" required >
+<input type="button" value="Add" onClick="Addfunc();">
+<p id="res">
+</p>
+
+<script>
+function Addfunc()
+{
+var n1=document.getElementById("num1").value;
+var n2=document.getElementById("num2").value;
+var res=+n1 + +n2;
+alert("sum is" +res);
+document.getElementById(res).innerText=res;
+}
+</script>
+</body>
+</html>
